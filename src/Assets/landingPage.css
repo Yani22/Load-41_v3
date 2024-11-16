@@ -1,0 +1,1184 @@
+.navbar {
+    display: inline-block;
+    top: 0;
+    z-index: 1;
+    background-color: transparent !important;
+}
+
+.first_navbar {
+    min-height: 5vh;
+    background-color: transparent;
+}
+
+#about {
+    text-align: left;
+    background: transparent;
+}
+
+.second_navbar {
+    min-width: 98vw;
+    max-height: 5vh;
+    text-align: right;
+    font-size: 15px;
+    font-weight: 600;
+    justify-content: space-between;
+    color: #555 !important;
+    background-color: transparent !important;
+}
+
+.list_items_second {
+    margin-right: 5%;
+    font-size: 15px;
+    font-weight: 600;
+    display: inline;
+    width: 10vw;
+    justify-content: space-between;
+    position: relative;
+    float: right;
+    list-style: none;
+    display: flex;
+}
+
+.list_items_third {
+    display: inline;
+    width: 30vw;
+    justify-content: space-between;
+    position: relative;
+    float: right;
+    right: -177px !important;
+    margin: 30px;
+    list-style: none;
+    display: flex;
+}
+
+.list_items_third li {
+    cursor: pointer !important;
+}
+
+.logo {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.logo1 {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.circle_navbar {
+    border-radius: 50%;
+    margin: 13px;
+    width: 5vw;
+    height: 10vh;
+    display: inline-block;
+    position: relative;
+    left: -180px;
+}
+
+.panel_landing_page {
+    display: block;
+    font-size: 0.5rem;
+    text-align: center;
+    max-height: 60vh;
+    background-color: transparent;
+}
+
+.panel_button {
+    min-width: 10vw;
+    min-height: 7vh;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 10px;
+    position: relative;
+    left: 60px;
+    border: 1px solid #ffffff;
+    background-color: black;
+    border-radius: 8px;
+}
+
+.column_cx_row {
+    border-bottom: 1px solid #d4d3d3;
+    padding: 2%;
+}
+
+.column_cx {
+    font-size: 12px;
+}
+
+.download_button {
+    min-width: 12vw;
+    min-height: 6vh;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 10px;
+    position: relative;
+    background-color: black;
+    border-radius: 8px;
+}
+
+.box_img {
+    font-size: 10px;
+    text-align: center;
+    display: block;
+}
+
+.button_message {
+    color: #000 !important;
+    font-weight: 600;
+    margin: 10px;
+    position: relative;
+    background-color: #FFFFFF !important;
+    border-radius: 8px;
+    border: 'none' !important;
+    width: 7vw;
+    height: 6vh;
+    font-size: 13px;
+}
+
+.button_login {
+    color: #fff !important;
+    font-weight: 600;
+    margin: 10px;
+    position: relative;
+    background-color: #000 !important;
+    border-radius: 8px;
+    border: 'none' !important;
+    width: 7vw;
+    height: 6vh;
+    font-size: 13px;
+}
+
+.about_image {
+    background-color: transparent;
+    border-radius: 20px;
+    max-width: 40vw;
+}
+
+.button_request {
+    min-width: 12vw;
+    min-height: 6vh;
+    color: #000;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 10px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    border: none;
+}
+
+#contact {
+    color: #fff;
+    background: transparent;
+}
+
+.row_contact {
+    margin: auto;
+}
+
+.load-panner {
+    width: 100vw;
+    max-height: 60vh;
+    object-fit: cover;
+}
+
+.circle_profile {
+    border-radius: 50%;
+    width: 5vw;
+    height: 10vh;
+    display: inline-block;
+    background-color: #E5E5E5;
+    position: relative;
+    margin: 8% auto;
+}
+
+.load_image {
+    height: 60vh;
+}
+
+.button_contact {
+    min-width: 12vw;
+    min-height: 6vh;
+    color: #000;
+    font-size: 13px;
+    margin: 8%;
+    font-weight: 600;
+    position: relative;
+    background-color: black;
+    border-radius: 8px;
+}
+
+#services {
+    color: #fff;
+    background: transparent;
+}
+
+.row_disclaimer {
+    margin: auto;
+    height: 10vh;
+}
+
+.row_feature {
+    margin: auto 13%;
+    justify-content: space-between;
+}
+
+.row_load_41 {
+    margin: auto 13%;
+}
+
+.row_ship {
+    margin: auto 28%;
+}
+
+.log_p {
+    margin: 10% 0%;
+    text-align: left;
+}
+
+.register_img {
+    display: block;
+    width: 50vw;
+    height: 100vh;
+}
+
+#feature {
+    margin: 8% auto;
+    background: transparent;
+}
+
+#load {
+    margin: 8% auto;
+    background: transparent;
+}
+
+#ship {
+    margin: 8% auto;
+    background: transparent;
+}
+
+#profile {
+    margin: 8% auto;
+    background: transparent;
+}
+
+#disclaimer {
+    /* margin:8% auto; */
+    background: transparent
+}
+
+#con_1 {
+    width: 40vw;
+    text-align: left;
+    background: transparent;
+}
+
+.Land_Page {
+    display: block;
+    position: relative;
+    background: url('./41backgroundcut.jpg');
+
+}
+
+#panel {
+    margin-top: 4%;
+    background: transparent;
+}
+
+.third_inner {
+    background-color: transparent !important;
+}
+
+.me-auto {
+    display: flex;
+    margin-top: -10px;
+}
+
+.add_title {
+    border-bottom: 2px solid #555;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.box-container {
+    border: 2px solid #000;
+}
+
+.card_container {
+    display: inline-block;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.modal-container {
+    margin: auto;
+}
+
+.third {
+    padding: 0% 18% !important;
+}
+
+.tracking-image {
+    height: 43vh;
+    max-width: 27rem;
+    min-width: 11rem;
+    color: #fff;
+}
+
+.load_content {
+    text-align: left;
+    /* padding: 0% 13%; */
+    font-size: 1.5em;
+    color: #FFFFFF;
+}
+
+.panel_content p {
+    font-size: 4em;
+}
+
+.panel_text {
+    font-size: 22px !important;
+}
+
+.service_text {
+    font-size: 20px;
+}
+
+.service_image {
+    height: 40vh;
+    border-radius: 20px;
+}
+
+.items_navbar {
+    margin-left: 15%;
+}
+
+.Load41_app {
+    width: 6.5vw;
+    height: 14vh;
+    background-color: #000 !important;
+    border: 1px solid #555;
+    border-radius: 8px;
+}
+
+.container-download {
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo-down {
+    max-width: 100px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .subtitle {
+    font-size: 16px;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  .app-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .store-button img {
+    width: 150px;
+  }
+  
+  .share-section {
+    margin-top: 20px;
+  }
+  
+  .share-section img {
+    width: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: #000;
+  }
+  
+  @media (max-width: 768px) {
+    .store-button img {
+      width: 120px;
+    }
+  
+    .title {
+      font-size: 20px;
+    }
+  
+    .subtitle {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .store-button img {
+      width: 100px;
+    }
+  
+    .title {
+      font-size: 18px;
+    }
+  
+    .subtitle {
+      font-size: 12px;
+    }
+  }
+
+@media screen and (max-width:600px) {
+    .about_image {
+        max-width: 86vw;
+        margin-top: 5%;
+    }
+
+    .button_request {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .panel_content p {
+        font-size: 2em;
+    }
+
+    .panel_text {
+        font-size: 16px !important;
+    }
+
+    #panel {
+        margin-top: -3% !important;
+    }
+
+    #about {
+        margin-top: -12%;
+    }
+
+    .service_image {
+        height: 40vh;
+        width: 66vw;
+        border-radius: 20px;
+    }
+
+    .icon_fixed {
+        display: none;
+    }
+
+    #feature_c {
+        margin-left: -27%;
+    }
+
+    .service_image {
+        height: 40vh !important;
+    }
+
+    .button_message {
+        width: 22vw;
+        height: 6vh !important;
+        font-size: 20px;
+    }
+
+    .button_login {
+        width: 22vw;
+        height: 6vh !important;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:599px) {
+    .about_image {
+        max-width: 93vw;
+        margin-top: 5%;
+    }
+
+    #panel {
+        margin-top: -10% !important;
+    }
+
+    .load_content {
+        font-size: 1em !important;
+    }
+
+    #about {
+        margin-top: -16%;
+    }
+
+    #contact {
+        margin-top: -15%;
+    }
+
+    .service_text {
+        font-size: 15px;
+    }
+
+    .service_image {
+        height: 40vh;
+        width: 66vw;
+        border-radius: 20px;
+    }
+
+    .icon_fixed {
+        display: none;
+    }
+
+    #feature_c {
+        margin-left: -8%;
+    }
+}
+
+@media (min-width:540px) and (max-width:768px) {
+    .tracking-image {
+        height: 70vh;
+        max-width: 20rem;
+        min-width: 11rem;
+    }
+
+    #ship {
+        margin: 0% 14%;
+    }
+
+    .load_image {
+        height: 21vh;
+    }
+
+    .button_request {
+        font-size: 20px;
+        min-height: 15vh;
+    }
+
+    .about_image {
+        max-width: 80vw !important;
+    }
+
+    .service_image {
+        height: 80vh;
+    }
+
+    .button_message {
+        height: 12vh;
+    }
+
+    .button_login {
+        height: 12vh;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .tracking-image {
+        height: 48vh !important;
+        max-width: 27rem !important;
+        min-width: 11rem !important;
+    }
+}
+
+@media (min-width:420px) and (max-width:540px) {
+    .tracking-image {
+        height: 50vh !important;
+        max-width: 10rem;
+        min-width: 10rem;
+    }
+
+    .load_image {
+        height: 18vh !important;
+    }
+
+    .about_image {
+        max-width: 93vw !important;
+    }
+
+    .row_feature {
+        margin: auto 20% !important;
+        width: 100%;
+    }
+
+    #contact {
+        margin-top: -5% !important;
+    }
+
+    .panel_content p {
+        font-size: 2em !important;
+    }
+
+    #panel {
+        margin-top: -2% !important;
+    }
+}
+
+@media (min-width:420px) and (max-width:639px) {
+    .tracking-image {
+        height: 80vh;
+        max-width: 10rem;
+        min-width: 10rem;
+    }
+
+    .row_feature {
+        margin: auto 32%;
+        width: 100%;
+    }
+
+    .load_image {
+        height: 60vh;
+    }
+
+    .load_content {
+        text-align: left;
+        padding: 0% 0%;
+        font-size: 1.2em;
+    }
+
+    .button_request {
+        min-width: 15vw;
+        min-height: 5vh;
+        color: #000;
+        font-size: 13px;
+        font-weight: 600;
+        margin: 10px;
+        position: relative;
+        background-color: #FFFFFF;
+        border-radius: 8px;
+    }
+
+    .button_message {
+        width: 7vw;
+        height: 6vh;
+        font-size: 13px;
+    }
+
+    .button_login {
+        width: 7vw;
+        height: 6vh;
+        font-size: 13px;
+    }
+
+}
+
+@media (min-width:427px) and (max-width:768px) {
+    .circle_profile {
+        width: 27vw;
+        height: 15vh;
+        margin: 0px;
+        left: -40px;
+    }
+
+    .row_load_41 {
+        margin: 0%;
+    }
+
+    #con_1 {
+        width: auto;
+    }
+
+    .row_ship {
+        margin: auto 11%;
+    }
+
+    .load_image {
+        height: 30vh;
+    }
+
+    #ship {
+        margin: 0%
+    }
+
+    .about_image {
+        max-width: 47vw;
+    }
+
+    .service_image {
+        height: 40vh;
+    }
+}
+
+@media (min-width:377px) and (max-width:426px) {
+    .circle_profile {
+        width: 32vw;
+        height: 20vh;
+        margin: 16%;
+    }
+
+    .circle_navbar {
+        left: -150px
+    }
+
+    .row_load_41 {
+        margin: 0%;
+    }
+
+    #ship {
+        margin: auto;
+    }
+
+    #con_1 {
+        width: auto;
+    }
+
+    .row_ship {
+        margin: auto 11%;
+    }
+
+    #panel {
+        margin-top: 8%;
+    }
+
+    .panel_content p {
+        font-size: 2em !important;
+    }
+
+    .about_image {
+        background-color: transparent;
+        border-radius: 20px;
+        max-width: 93vw !important;
+        margin-top: 5%;
+    }
+}
+
+@media (min-width:280px) and (max-width:768px) {
+    .load_image {
+        height: 25vh;
+    }
+
+    .panel_button {
+        min-height: 5vh;
+        font-size: 9px !important;
+    }
+
+}
+
+@media (min-width:911px) and (max-width:1009px) {
+    .load_image {
+        height: 25vh;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .logo {
+        position: relative;
+        display: none;
+    }
+
+    .logo1 {
+        position: relative;
+        display: flex;
+        width: 50px;
+    }
+
+    #panel {
+        margin-top: 0%;
+    }
+
+    .panel_content p {
+        font-size: 3em;
+    }
+
+    .about_image {
+        background-color: transparent;
+        border-radius: 20px;
+        max-width: 72vw;
+        margin-top: 5%;
+    }
+
+    .button_request {
+        font-size: 20px;
+    }
+
+    .third {
+        padding: 0% !important;
+    }
+
+    .download_button {
+        min-height: 4vh;
+    }
+
+    .button_message {
+        width: 22vw;
+        height: 6vh;
+        font-size: 13px;
+    }
+
+    .button_login {
+        width: 22vw;
+        height: 6vh;
+        font-size: 13px;
+    }
+
+    /* .about_image{
+        width: 100vw;
+        height: 100vh;
+    } */
+}
+
+@media screen and (max-width:376px) {
+    .circle_navbar {
+        margin: 13px;
+        left: 0px;
+        top: -23px;
+    }
+
+    .circle_profile {
+        width: 32vw;
+        height: 20vh;
+    }
+
+    .row_load_41 {
+        margin: 0%;
+    }
+
+    #ship {
+        margin: 0%;
+    }
+
+    #con_1 {
+        width: auto;
+    }
+
+    .row_ship {
+        margin: auto 11%;
+    }
+
+    .load_content {
+        font-size: 0.8em;
+    }
+
+    .panel_content p {
+        font-size: 2em;
+    }
+
+    .about_image {
+        max-width: 93vw;
+    }
+}
+
+@media (min-width:769px) and (max-width:820px) {
+    .second_navbar {
+        min-width: 97vw;
+    }
+
+    .circle_profile {
+        width: 14vw;
+    }
+
+    .row_load_41 {
+        margin: 0%;
+    }
+
+    .row_ship {
+        margin: auto 11%;
+    }
+
+    .load_image {
+        height: 27vh;
+    }
+
+    .tracking-image {
+        height: 24vh;
+        max-width: 27rem;
+        min-width: 11rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .load_image {
+        height: 40vh;
+    }
+
+    .logo {
+        position: relative;
+        display: flex;
+    }
+
+    .logo1 {
+        position: relative;
+        display: none;
+    }
+
+    .button_message {
+        width: 10vw;
+        height: 6vh;
+        font-size: 13px;
+    }
+
+    .button_login {
+        width: 10vw;
+        height: 6vh;
+        font-size: 13px;
+    }
+
+    .button_request {
+        min-width: 12vw;
+        min-height: 6vh;
+        font-size: 20px;
+    }
+
+    .row_feature {
+        margin: 0%;
+    }
+
+    .about_image {
+        max-width: 44vw !important;
+        height: 40vh;
+    }
+
+    .load_content {
+        font-size: 1.3em;
+    }
+
+    #panel {
+        margin-top: -2%;
+    }
+}
+
+@media (min-width:1440px) and (max-width:1560px) {
+    #load {
+        margin: 8% 0%;
+    }
+
+    .tracking-image {
+        height: 42vh;
+    }
+
+    .load_image {
+        height: 30vh
+    }
+
+    #panel {
+        max-width: 1310px;
+        margin: auto 4% !important;
+    }
+
+    .about_image {
+        max-width: 44vw !important;
+        height: 47vh;
+    }
+}
+
+@media (min-width:1441px) {
+    .load_image {
+        height: 40vh;
+    }
+}
+
+@media (min-width:821px) and (max-width:1020px) {
+    .load_image {
+        height: 63vh !important;
+    }
+
+    .tracking-image {
+        height: 48vh !important;
+        max-width: 27rem !important;
+        min-width: 11rem !important;
+    }
+}
+
+@media (min-width:1021px) and (max-width:1024px) {
+    #panel {
+        margin-top: -4% !important;
+    }
+
+    .about_image {
+        max-width: 46vw;
+        height: 35vh;
+    }
+
+    .items_navbar {
+        margin-left: 3%;
+    }
+}
+
+@media (min-width:821px) and (max-width:1024px) {
+    .second_navbar {
+        min-width: 98vw;
+    }
+
+    .circle_profile {
+        width: 10vw;
+    }
+
+    .row_ship {
+        margin: auto 11%;
+    }
+
+    .row_load_41 {
+        margin: 0%;
+    }
+
+    .load_image {
+        height: 40vh;
+    }
+
+    .tracking-image {
+        height: 21vh;
+    }
+
+    .third_navbar {
+        font-size: 15px;
+    }
+
+    #panel {
+        margin-top: -4% !important;
+    }
+
+    .about_image {
+        max-width: 46vw;
+        height: 76vh !important;
+    }
+}
+
+@media (min-width:1801px) and (max-width:2392px) {
+    #panel {
+        max-width: 2310px;
+        margin: auto 0% !important;
+    }
+}
+
+@media (min-width:2393px) and (max-width:2560px) {
+    #panel {
+        max-width: 2210px;
+        margin: auto 4% !important;
+    }
+
+    .load_image {
+        height: 40vh;
+        margin-top: 35%;
+    }
+}
+
+@media (min-width:1561px) and (max-width:1800px) {
+    .tracking-image {
+        height: 24vh !important;
+        max-width: 30rem !important;
+        min-width: 11rem !important;
+    }
+
+    .load_image {
+        height: 28vh !important;
+    }
+}
+
+@media (min-width:1801px) and (max-width:2560px) {
+    .download_button {
+        font-size: 30px;
+    }
+
+    .panel_button {
+        font-size: 20px;
+    }
+
+    .button_message {
+        font-size: 30px;
+    }
+
+    .button_login {
+        font-size: 30px;
+    }
+
+    .button_contact {
+        font-size: 30px;
+    }
+
+    .button_request {
+        font-size: 30px;
+    }
+
+    .second_navbar {
+        min-width: 100vw;
+    }
+
+    .third_navbar {
+        font-size: 20px;
+    }
+
+    .row_feature {
+        margin: 5% 0%;
+
+    }
+
+    .tracking-image {
+        height: 35vh !important;
+        max-width: 30rem !important;
+        min-width: 11rem !important;
+    }
+
+    .column_cx {
+        font-size: 23px;
+    }
+
+    .load_image {
+        height: 30vh;
+    }
+
+    .Land_Page {
+        width: 100%;
+        font-size: 25px;
+    }
+
+    #load {
+        margin: 8% 20%;
+    }
+
+    .ship_column {
+        text-align: center !important;
+    }
+
+    .items_navbar {
+        margin-left: 25%;
+    }
+}
+
+@media (min-width:2561px) and (max-width:2766px) {
+    #panel {
+        max-width: 2367px !important;
+        margin: auto 4% !important;
+    }
+
+    .tracking-image {
+        height: 28vh !important;
+        max-width: 27rem !important;
+        min-width: 18rem !important;
+    }
+
+    .download_button {
+        font-size: 30px !important;
+    }
+
+    .items_navbar {
+        margin-left: 25%;
+    }
+
+    .panel_button {
+        font-size: 20px !important;
+    }
+
+    .button_message {
+        font-size: 30px !important;
+    }
+
+    .button_login {
+        font-size: 30px !important;
+    }
+
+    .button_contact {
+        font-size: 30px !important;
+    }
+
+    .button_request {
+        font-size: 30px !important;
+    }
+
+    .load_image {
+        height: 24px !important;
+    }
+}

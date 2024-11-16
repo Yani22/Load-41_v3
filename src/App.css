@@ -1,0 +1,155 @@
+.App {
+  text-align: center;
+  display: block;
+}
+
+.flex-justify-end-z-400 {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  z-index: 999;
+  padding-top: 8%;
+  padding-left: 1%;
+  font-size: 8px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+path.leaflet-interactive.animate {
+  color: #2d2d86 !important;
+  stroke-width: 4px;
+  stroke-dasharray: 1920;
+  stroke-dashoffset: 1920;
+  animation: dash 15s linear 1s forwards;
+}
+
+.swal2-container {
+  z-index: X;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Hide Leaflet attribution control */
+.leaflet-control-attribution {
+  display: none;
+}
+
+/* Ensure the map container is responsive */
+.leaflet-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* Map wrapper for general use */
+#map-wrapper {
+  position: relative;
+  width: 100%; /* Adjusted to full width */
+  height: 80vh; /* Adjusted to 80% of viewport height */
+  margin: 0 auto; /* Center map horizontally */
+}
+
+/* Map wrapper for truck-specific use */
+#map-wrapper-Truck {
+  position: relative;
+  width: 100%; /* Adjusted to full width */
+  height: 65vh; /* Adjusted to 65% of viewport height */
+  margin: 0 auto; /* Center map horizontally */
+}
+
+.custom-cluster-icon {
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  text-align: center;
+  line-height: 40px;
+}
+
+.custom-cluster-icon-inner {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  /* Adjust map wrapper for smaller screens */
+  #map-wrapper, #map-wrapper-Truck {
+    width: 100%;
+    height: 50vh; /* Adjust height for smaller screens */
+  }
+
+  .leaflet-pane {
+    position: absolute; /* Ensure panes are positioned correctly */
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    z-index: 400; /* Ensure it is on top of other elements */ /* Avoid scrollbars unless specifically needed */
+  }
+  
+  /* Specific adjustments if needed */
+  .leaflet-tile-pane {
+    z-index: 200; /* Example: Set z-index for the tile pane */
+  }
+  
+  .leaflet-overlay-pane {
+    z-index: 300; /* Example: Set z-index for overlay panes */
+  }
+  
+}
+
+/* Adjust map wrapper for extra small screens */
+@media (max-width: 480px) {
+  #map-wrapper, #map-wrapper-Truck {
+    height: 60vh; 
+    margin: 13% auto;
+    overflow: hidden;/* Adjust height for very small screens */
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@media screen and (max-width:555px) {
+  .leaflet-container {
+    overflow: visible !important;
+    position: relative !important;
+    height: 60vh;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

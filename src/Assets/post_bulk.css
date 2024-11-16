@@ -1,0 +1,260 @@
+.message {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: #2b1e1d;
+    /* Red for error messages */
+    color: white;
+    border-radius: 5px;
+    animation: messageAnimation 3s ease-out;
+}
+
+
+/* Keyframes for message animation */
+@keyframes messageAnimation {
+    0% {
+        top: -50px;
+        opacity: 0;
+    }
+
+    30% {
+        top: 2%;
+        opacity: 1;
+    }
+}
+
+.circular-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    outline: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.circular-checkbox:checked {
+    background-color: #3498db;
+    /* Change color when checked */
+}
+
+.circular-label {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    text-align: center;
+}
+
+.circular-container {
+    display: flex;
+    align-items: center;
+}
+
+.disabled-feature {
+    color: gray;
+    pointer-events: none;
+    /* This disables click events on the list item */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.custom-file-label {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.custom-file-label:hover {
+    background-color: #2980b9;
+}
+
+.custom-file-input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.custom-upload {
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.custom-upload:hover {
+    background-color: #2980b9;
+}
+
+.uploaded-file {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #dff0d8;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.message {
+    color: #e74c3c;
+    display: none;
+    font-size: 14px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    width: 100%;
+    /* Adjust as needed */
+    height: 70px;
+    /* Adjust as needed */
+    background-color: #93B1A6;
+    overflow: hidden;
+}
+
+#typing-effect {
+    font-size: 30px;
+    font-weight: bolder;
+    white-space: nowrap;
+    /* Prevents text from wrapping */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.containers {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-upload {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.custom-upload:hover {
+    background-color: #2980b9;
+}
+
+.custom-file-label {
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #3498db;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+.custom-file-label:hover {
+    background-color: #2980b9;
+}
+
+.download-link {
+    display: block;
+    margin-top: 10px;
+    color: #3498db;
+}
+
+.uploaded-file {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #dff0d8;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    font-size: 14px;
+    display: none;
+}
+
+.page-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent black background */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    /* Higher z-index to make sure it's on top of other content */
+
+}
+
+.loader-image {
+    width: 100px;
+    /* Adjust the size as needed */
+    height: auto;
+    border-radius: 50%;
+}
