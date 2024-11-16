@@ -200,7 +200,7 @@ const ShippersList = () => {
   const deleteLoad = async () => {
     setLoading(true)
     try {
-      const { docRef } = await axios.delete(`https://3xklj60c-5000.asse.devtunnels.ms/users-details/${deleteid}`,{
+      const { docRef } = await axios.delete(`https://dr48nfhb-5000.use.devtunnels.ms/users-details/${deleteid}`,{
         headers: mainHeader()
       })
       setLoading(false)
@@ -263,7 +263,7 @@ const ShippersList = () => {
       status: addstatus
     };
     try {
-      const { docRef } = await axios.put(`https://3xklj60c-5000.asse.devtunnels.ms/users-details/${d_ID}`,{data:data,type:types},{
+      const { docRef } = await axios.put(`https://dr48nfhb-5000.use.devtunnels.ms/users-details/${d_ID}`,{data:data,type:types},{
         headers: mainHeader()
       })
       setLoading(false)
@@ -297,7 +297,7 @@ const ShippersList = () => {
     setLoads(true)
     setLoading(true)
     try {
-      const { data: docRef} = await axios.post('https://3xklj60c-5000.asse.devtunnels.ms/users-details',{entries:[{
+      const { data: docRef} = await axios.post('https://dr48nfhb-5000.use.devtunnels.ms/users-details',{entries:[{
         data:{
         name: addname,
         city: addcity,
@@ -803,7 +803,7 @@ const ShippersList = () => {
   ];
   const fetchUsers = async () => {
     try{
-      let { data} = await axios.get(`https://3xklj60c-5000.asse.devtunnels.ms/users_details`,{
+      let { data} = await axios.get(`https://dr48nfhb-5000.use.devtunnels.ms/users_details`,{
         headers: mainHeader()
     })
     if(data?.data){

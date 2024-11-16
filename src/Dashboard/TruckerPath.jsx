@@ -1560,7 +1560,7 @@ export const TruckerPath = () => {
       }
     }
 
-    await axios.post(`https://3xklj60c-5000.asse.devtunnels.ms/trucker_update_load`, data, {
+    await axios.post(`https://dr48nfhb-5000.use.devtunnels.ms/trucker_update_load`, data, {
       headers: {
         'Authorization': `Bearer ${localStorage.getItem('trucker_token')}`
       }
@@ -1616,7 +1616,7 @@ export const TruckerPath = () => {
     const data = {
       external_id: [...new Set(deletedata?.map(x => x?.shipment_info?.external_id))]
     }
-    await axios.post(`https://3xklj60c-5000.asse.devtunnels.ms/trucker_delete_load`, data, {
+    await axios.post(`https://dr48nfhb-5000.use.devtunnels.ms/trucker_delete_load`, data, {
       headers: {
         'Authorization': `Bearer ${localStorage.getItem('trucker_token')}`
       }
@@ -1664,7 +1664,7 @@ export const TruckerPath = () => {
         deleteid
       ]
     }
-    await axios.post(`https://3xklj60c-5000.asse.devtunnels.ms/trucker_delete_load`, data, {
+    await axios.post(`https://dr48nfhb-5000.use.devtunnels.ms/trucker_delete_load`, data, {
       headers: {
         'Authorization': `Bearer ${localStorage.getItem('trucker_token')}`
       }
@@ -1756,7 +1756,7 @@ export const TruckerPath = () => {
       }
     }
     try {
-      const docRef = await axios.post('https://3xklj60c-5000.asse.devtunnels.ms/trucker_submit_load', data, {
+      const docRef = await axios.post('https://dr48nfhb-5000.use.devtunnels.ms/trucker_submit_load', data, {
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('trucker_token')}`      
           }
@@ -1797,7 +1797,7 @@ export const TruckerPath = () => {
     const fetchPage = async (pageNumber) => {
       try {
         const response = await axios.post(
-          'https://3xklj60c-5000.asse.devtunnels.ms/trucker_fetch_loads',
+          'https://dr48nfhb-5000.use.devtunnels.ms/trucker_fetch_loads',
           {
             page_num: pageNumber,
             page_size: 100

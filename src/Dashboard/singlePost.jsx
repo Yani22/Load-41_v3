@@ -1319,7 +1319,7 @@ const SinglePost = () => {
         
       }
       if ((direct == 'Post_to_Direct') && localStorage.getItem('direct_token')) {
-        const docRef = await axios.post(`https://3xklj60c-5000.asse.devtunnels.ms/fetch_postings/${posting_type}`, dataDirect, {
+        const docRef = await axios.post(`https://dr48nfhb-5000.use.devtunnels.ms/fetch_postings/${posting_type}`, dataDirect, {
           headers:
           {
             'api-token':`${localStorage.getItem('direct-api-key')}`,
@@ -1338,7 +1338,7 @@ const SinglePost = () => {
         
       }
       if ((ptts == 'Post_to_Truckerpath') && localStorage.getItem('trucker_token')) {
-        const docRefS = await axios.post('https://3xklj60c-5000.asse.devtunnels.ms/trucker_submit_load', dataTP, {
+        const docRefS = await axios.post('https://dr48nfhb-5000.use.devtunnels.ms/trucker_submit_load', dataTP, {
           headers: {
             'Authorization': `Bearer ${localStorage.getItem('trucker_token')}`,
             'Content-Type': 'application/json'

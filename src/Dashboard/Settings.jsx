@@ -37,7 +37,7 @@ const UserProfile = () => {
         const fetchUserProfile = async () => {
             try {
                 setLoading(true);
-                const { data: { user } } = await axios.get(`https://3xklj60c-5000.asse.devtunnels.ms/users?user_id=${JSON.parse(localStorage.getItem('authentication'))?.user?.id}`,{
+                const { data: { user } } = await axios.get(`https://dr48nfhb-5000.use.devtunnels.ms/users?user_id=${JSON.parse(localStorage.getItem('authentication'))?.user?.id}`,{
                     headers: mainHeader()
                   });
                 if (user?.data?.length) {
@@ -70,13 +70,13 @@ const UserProfile = () => {
             formData.append('file', file);
 
             try {
-                const response = await axios.post('https://3xklj60c-5000.asse.devtunnels.ms/upload-avatar', formData, {
+                const response = await axios.post('https://dr48nfhb-5000.use.devtunnels.ms/upload-avatar', formData, {
                     headers: mainHeader()
                 });
                 
                 if(!response) throw "error"
 
-                const response1 = await axios.get('https://3xklj60c-5000.asse.devtunnels.ms/get-avatar', {
+                const response1 = await axios.get('https://dr48nfhb-5000.use.devtunnels.ms/get-avatar', {
                     headers: mainHeader()
                 });
     
@@ -105,7 +105,7 @@ const UserProfile = () => {
                 avatarUrl = await uploadAvatar(avatarFile);
             }
 
-            const { data } = await axios.put(`https://3xklj60c-5000.asse.devtunnels.ms/users?user_id=${JSON.parse(localStorage.getItem('authentication'))?.user?.id}`,
+            const { data } = await axios.put(`https://dr48nfhb-5000.use.devtunnels.ms/users?user_id=${JSON.parse(localStorage.getItem('authentication'))?.user?.id}`,
             {
                 email: profile.email,               
                 username: profile.username,
@@ -135,7 +135,7 @@ const UserProfile = () => {
     // Functions to fetch tokens
     const fetchDatToken = async () => {
         try {
-            const response = await fetch('https://3xklj60c-5000.asse.devtunnels.ms/dat_token', {
+            const response = await fetch('https://dr48nfhb-5000.use.devtunnels.ms/dat_token', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(datInput)
@@ -155,7 +155,7 @@ const UserProfile = () => {
 
     const fetchDirectToken = async () => {
         try {
-            const response = await fetch('https://3xklj60c-5000.asse.devtunnels.ms/direct_token', {
+            const response = await fetch('https://dr48nfhb-5000.use.devtunnels.ms/direct_token', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(directInput)
@@ -175,7 +175,7 @@ const UserProfile = () => {
 
     const fetchTruckstopToken = async () => {
         try {
-            const response = await fetch('https://3xklj60c-5000.asse.devtunnels.ms/truckstop_token', {
+            const response = await fetch('https://dr48nfhb-5000.use.devtunnels.ms/truckstop_token', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(truckstopInput)
