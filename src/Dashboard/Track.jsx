@@ -483,7 +483,7 @@ const onChangeFields = (e, j, r, f) => {
       loadStatus: e.target.value,
     };
     try {
-      const { data:c} = await axios.put(`http://localhost:5000/trackers-info/${id}`,data,{
+      const { data:c} = await axios.put(`https://3xklj60c-5000.asse.devtunnels.ms/trackers-info/${id}`,data,{
         headers: mainHeader()
       })
       fetchLoad()
@@ -974,7 +974,7 @@ const onChangeFields = (e, j, r, f) => {
 
     try {
         const response = await axios.put(
-            'http://localhost:5000/trackers-info/bulk-update', 
+            'https://3xklj60c-5000.asse.devtunnels.ms/trackers-info/bulk-update', 
             { IDs: dataDelete },
             { headers: mainHeader() }
         );
@@ -1030,7 +1030,7 @@ const Update = async () => {
   try {
       // Make the PUT request to the API
       const response = await axios.put(
-          `http://localhost:5000/trackers-info/${d_ID}`, 
+          `https://3xklj60c-5000.asse.devtunnels.ms/trackers-info/${d_ID}`, 
           data,
           { headers: mainHeader() } // Ensure headers include Authorization
       );
@@ -1079,7 +1079,7 @@ const Update = async () => {
     };
 
     try {
-        const { data: c} = await axios.put(`http://localhost:5000/trackers-info/${deleteid}`,data,{
+        const { data: c} = await axios.put(`https://3xklj60c-5000.asse.devtunnels.ms/trackers-info/${deleteid}`,data,{
           headers: mainHeader() 
         })
 
@@ -1147,7 +1147,7 @@ function openAppOrRedirect() {
       message:`Hi! here is ${name}! Your Tracking ID is ${trackingid} links to Download Android is https://play.google.com/store/apps/details?id=com.jbl.load41 and Apple is https://apps.apple.com/in/app/load41/id6476617385`
   }
 
-      await axios.post('http://localhost:5000/send_sms',data,{
+      await axios.post('https://3xklj60c-5000.asse.devtunnels.ms/send_sms',data,{
         headers: mainHeader() 
       }).then(
         res=>{
@@ -1182,7 +1182,7 @@ function openAppOrRedirect() {
     setLoading(true);
     const tid = mobile.slice(8, 11) + Math.floor(10000 + Math.random() * 90000)
     try {
-        const { data } = await axios.post('http://localhost:5000/trackers-info',{entries:[{
+        const { data } = await axios.post('https://3xklj60c-5000.asse.devtunnels.ms/trackers-info',{entries:[{
             driverPhoneNumber: mobile,
             email: email,
             comment: comment,
@@ -1247,7 +1247,7 @@ function openAppOrRedirect() {
 
   const fetchLoad = async () => {
     setLoading(true)
-    let { data} = await axios.get(`http://localhost:5000/trackers_info?user_id=${localStorage.getItem('id')}`)
+    let { data} = await axios.get(`https://3xklj60c-5000.asse.devtunnels.ms/trackers_info?user_id=${localStorage.getItem('id')}`)
     if (data?.data) {
       setLoading(false)
       // setLogs(data?.filter(x=>x.isDeleted == false)?.map(x=>x.locationLogs))
@@ -1276,7 +1276,7 @@ function openAppOrRedirect() {
   const fetchUsers = async () => {
     // setLoading(true)
     if(localStorage.getItem('authentication')){
-      let { data} = await axios.get(`http://localhost:5000/users_details`,{
+      let { data} = await axios.get(`https://3xklj60c-5000.asse.devtunnels.ms/users_details`,{
         headers: mainHeader()
     })
       if (data) {
@@ -1542,7 +1542,7 @@ function openAppOrRedirect() {
 
     try {
         // Perform the insert operation
-        const { data: insertData} = await axios.post('http://localhost:5000/users-details',{entries:[{ data, type }]},{
+        const { data: insertData} = await axios.post('https://3xklj60c-5000.asse.devtunnels.ms/users-details',{entries:[{ data, type }]},{
         headers: mainHeader()
       });
 
@@ -1619,7 +1619,7 @@ function openAppOrRedirect() {
 
   const handleSendNotification = async (json) => {
     try {
-      const response = await axios.post('http://localhost:5000/send_notification', {message:json.message,trackingId:json.trackingId,title:json.title},{
+      const response = await axios.post('https://3xklj60c-5000.asse.devtunnels.ms/send_notification', {message:json.message,trackingId:json.trackingId,title:json.title},{
         headers: mainHeader()
       });
       withReactContent(Swal).fire({

@@ -30,7 +30,7 @@ const Login = () => {
   const deviceInfo = browser.getResult();
 
   async function logUserLogin(userId, deviceInfo, location,tokenData) {
-    const { data } = await axios.post('http://localhost:5000/user-logins',{ user_id: userId, device_info: JSON.stringify(deviceInfo), location: location },{
+    const { data } = await axios.post('https://3xklj60c-5000.asse.devtunnels.ms/user-logins',{ user_id: userId, device_info: JSON.stringify(deviceInfo), location: location },{
       headers: {
         'Content-Type': 'application/json',
         'Authorization': 'Bearer ' + tokenData?.token  // Use stored JWT token
@@ -74,7 +74,7 @@ const Login = () => {
     if (password === cpassword) {
       try {
         setLoad(true);
-        const {data}  = await axios.post('http://localhost:5000/signup',{
+        const {data}  = await axios.post('https://3xklj60c-5000.asse.devtunnels.ms/signup',{
           email: name,
           password: password,
           username: username,
@@ -120,7 +120,7 @@ const Login = () => {
   const fetchAllTokens = async (credentials) => {
 
     try {
-        const response = await fetch('http://localhost:5000/get_tokens', {
+        const response = await fetch('https://3xklj60c-5000.asse.devtunnels.ms/get_tokens', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(credentials)
@@ -151,7 +151,7 @@ const Login = () => {
       access_token: localStorage.getItem('dat_token') ? localStorage.getItem('dat_token') : ''
   };
     try {
-      const {data} = await axios.post('http://localhost:5000/login',{
+      const {data} = await axios.post('https://3xklj60c-5000.asse.devtunnels.ms/login',{
         email: name,
         password: password,
       });

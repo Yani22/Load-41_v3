@@ -482,7 +482,7 @@ export const TrashCan = () => {
       loadStatus: e.target.value,
     };
     try {
-      const { data:c} = await axios.put(`http://localhost:5000/trackers-info/${id}`,data,{
+      const { data:c} = await axios.put(`https://3xklj60c-5000.asse.devtunnels.ms/trackers-info/${id}`,data,{
         headers: mainHeader()
       })
       fetchLoad()
@@ -981,7 +981,7 @@ export const TrashCan = () => {
 
     try {
         
-      const { data:c} = await axios.put(`http://localhost:5000/trackers-info/${d_ID}`,data,{
+      const { data:c} = await axios.put(`https://3xklj60c-5000.asse.devtunnels.ms/trackers-info/${d_ID}`,data,{
         headers: mainHeader()
       })
         if (!c) {
@@ -1017,7 +1017,7 @@ const bulkDeleteLoad = async () => {
   const dataDelete = deletedata?.map(x => x?.id)
   try {
 
-    const { data: c } = await axios.delete('http://localhost:5000/trackers-info/bulk-delete', {
+    const { data: c } = await axios.delete('https://3xklj60c-5000.asse.devtunnels.ms/trackers-info/bulk-delete', {
       data: { IDs: dataDelete },  // Correct placement of the payload
       headers: mainHeader()
   });
@@ -1061,7 +1061,7 @@ const bulkDeleteLoad = async () => {
     setLoading(true);
 
     try {
-      const { data:c} = await axios.delete(`http://localhost:5000/trackers-info/${deleteid}`,{
+      const { data:c} = await axios.delete(`https://3xklj60c-5000.asse.devtunnels.ms/trackers-info/${deleteid}`,{
         headers: mainHeader()
       })
 
@@ -1100,7 +1100,7 @@ const bulkDeleteLoad = async () => {
     setLoading(true);
     const tid = mobile.slice(8, 11) + Math.floor(10000 + Math.random() * 90000)
     try {
-      const { data } = await axios.post('http://localhost:5000/trackers-info',{entries:[{
+      const { data } = await axios.post('https://3xklj60c-5000.asse.devtunnels.ms/trackers-info',{entries:[{
         driverPhoneNumber: mobile,
         email: email,
         comment: comment,
@@ -1198,7 +1198,7 @@ const sendTrackingmessage = async (to,trackingid,loadid,name) => {
    message:`Hi! here is ${name}! Your Tracking ID is ${trackingid} links to Download Android is https://play.google.com/store/apps/details?id=com.jbl.load41 and Apple is https://apps.apple.com/in/app/load41/id6476617385`
 }
 
-   await axios.post('http://localhost:5000/send_sms',data,{
+   await axios.post('https://3xklj60c-5000.asse.devtunnels.ms/send_sms',data,{
     headers: mainHeader() 
   }).then(
      res=>{
@@ -1230,7 +1230,7 @@ const sendTrackingmessage = async (to,trackingid,loadid,name) => {
 }
 
   const fetchLoad = async () => {
-    let { data} = await axios.get(`http://localhost:5000/trackers_info?user_id=${localStorage.getItem('id')}`)
+    let { data} = await axios.get(`https://3xklj60c-5000.asse.devtunnels.ms/trackers_info?user_id=${localStorage.getItem('id')}`)
     if (data?.data) {
       
       // setLogs(data?.filter(x=>x.isDeleted == false)?.map(x=>x.locationLogs))
@@ -1257,7 +1257,7 @@ const sendTrackingmessage = async (to,trackingid,loadid,name) => {
   };
   const fetchUsers = async () => {
     if(localStorage.getItem('authentication')){
-    let { data} = await axios.get(`http://localhost:5000/users_details`,{
+    let { data} = await axios.get(`https://3xklj60c-5000.asse.devtunnels.ms/users_details`,{
       headers: mainHeader()
   })
     if (data?.data) {
@@ -1520,7 +1520,7 @@ const sendTrackingmessage = async (to,trackingid,loadid,name) => {
 
     try {
         // Perform the insert operation
-        const { data: insertData} = await axios.post('http://localhost:5000/users-details',{entries:[{ data, type }]},{
+        const { data: insertData} = await axios.post('https://3xklj60c-5000.asse.devtunnels.ms/users-details',{entries:[{ data, type }]},{
           headers: mainHeader() 
         });
 
@@ -1601,7 +1601,7 @@ const sendTrackingmessage = async (to,trackingid,loadid,name) => {
   })
 
   try {
-    const { data:c} = await axios.put(`http://localhost:5000/trackers-info/bulk-update`,{IDs:dataDelete},{
+    const { data:c} = await axios.put(`https://3xklj60c-5000.asse.devtunnels.ms/trackers-info/bulk-update`,{IDs:dataDelete},{
       headers: mainHeader() 
     })
 
@@ -1640,7 +1640,7 @@ const sendTrackingmessage = async (to,trackingid,loadid,name) => {
 
   const handleSendNotification = async (json) => {
     try {
-      const response = await axios.post('http://localhost:5000/send_notification', {message:json.message,trackingId:json.trackingId,title:json.title},{
+      const response = await axios.post('https://3xklj60c-5000.asse.devtunnels.ms/send_notification', {message:json.message,trackingId:json.trackingId,title:json.title},{
         headers: mainHeader()
       });
       withReactContent(Swal).fire({

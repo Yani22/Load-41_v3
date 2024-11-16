@@ -25,7 +25,7 @@ L.Icon.Default.mergeOptions({
 });
 let polyline;
 
-const socket = io('http://localhost:5000', {
+const socket = io('https://3xklj60c-5000.asse.devtunnels.ms', {
   transports: ['websocket'], // This can help with connection issues
 });
 

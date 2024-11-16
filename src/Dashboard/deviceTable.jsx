@@ -8,7 +8,7 @@ const UserDevicesTable = ({ userId }) => {
 
     useEffect(() => {
         const fetchUserDevices = async () => {
-            const { data } = await axios.get(`http://localhost:5000/user_logins?user_id=${userId}`,{
+            const { data } = await axios.get(`https://3xklj60c-5000.asse.devtunnels.ms/user_logins?user_id=${userId}`,{
                 headers: mainHeader()
             }
             )

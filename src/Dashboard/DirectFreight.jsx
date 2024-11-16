@@ -1308,7 +1308,7 @@ export const DirectFreight = () => {
       ]
     }
 
-    await axios.patch(`http://localhost:5000/fetch_postings/${posting_type}`, data, {
+    await axios.patch(`https://3xklj60c-5000.asse.devtunnels.ms/fetch_postings/${posting_type}`, data, {
       headers:
       {
         'api-token':`${localStorage.getItem('direct-api-key')}`,
@@ -1354,7 +1354,7 @@ export const DirectFreight = () => {
     const data = {
       posting_ids: [...new Set(deletedata?.map(x => x?.posting_id))]
     }
-    await axios.delete(`http://localhost:5000/fetch_postings/${posting_type}`, {
+    await axios.delete(`https://3xklj60c-5000.asse.devtunnels.ms/fetch_postings/${posting_type}`, {
       headers:
       {
         'api-token':`${localStorage.getItem('direct-api-key')}`,
@@ -1397,7 +1397,7 @@ export const DirectFreight = () => {
     const data = {
       posting_ids: [deleteid]
     }
-    await axios.delete(`http://localhost:5000/fetch_postings/${posting_type}`, {
+    await axios.delete(`https://3xklj60c-5000.asse.devtunnels.ms/fetch_postings/${posting_type}`, {
       headers:
       {
         'api-token':`${localStorage.getItem('direct-api-key')}`,
@@ -1459,7 +1459,7 @@ export const DirectFreight = () => {
     }
 
     try {
-      const docRef = await axios.post(`http://localhost:5000/fetch_postings/${posting_type}`, data, {
+      const docRef = await axios.post(`https://3xklj60c-5000.asse.devtunnels.ms/fetch_postings/${posting_type}`, data, {
         headers:
         {
           'api-token':`${localStorage.getItem('direct-api-key')}`,
@@ -1496,7 +1496,7 @@ export const DirectFreight = () => {
   const fetchLoad = async () => {
     setLoads(true)
     setLoading(true)
-    await axios.get(`http://localhost:5000/fetch_postings/${posting_type}`, {
+    await axios.get(`https://3xklj60c-5000.asse.devtunnels.ms/fetch_postings/${posting_type}`, {
       headers:
       {
         'api-token':`${localStorage.getItem('direct-api-key')}`,

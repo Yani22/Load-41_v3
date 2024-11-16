@@ -108,7 +108,7 @@ const CSVReader = ({ types }) => {
   const submit = async () => {
     setLoading(true);
     try {
-      const { data: docRef, error } = await axios.post('http://localhost:5000/users-details',{entries:data?.map(x=>{
+      const { data: docRef, error } = await axios.post('https://3xklj60c-5000.asse.devtunnels.ms/users-details',{entries:data?.map(x=>{
         return {
           data:x,
           type:types

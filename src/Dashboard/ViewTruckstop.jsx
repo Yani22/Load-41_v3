@@ -1508,7 +1508,7 @@ export const ViewTruckstop = () => {
         }
       }))]
     }
-    await axios.post(`http://localhost:5000/truckstop_delete_loads`, data, {
+    await axios.post(`https://3xklj60c-5000.asse.devtunnels.ms/truckstop_delete_loads`, data, {
       headers: {
         'Authorization': `Bearer ${localStorage.getItem('trucks_token')}`,
         'Content-Type': 'application/json'

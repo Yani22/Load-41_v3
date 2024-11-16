@@ -164,7 +164,7 @@ export default function TrackTruck(props) {
     onChange(geojsonData);
   };
   const fetchLoad = async () => {
-    let { data} = await axios.get(`http://localhost:5000/trackers_info?user_id=${localStorage.getItem('id')}`)
+    let { data} = await axios.get(`https://3xklj60c-5000.asse.devtunnels.ms/trackers_info?user_id=${localStorage.getItem('id')}`)
     
     // setLogs(data?.filter(x=>x.isDeleted == false)?.map(x=>x.locationLogs))
     // dispatch(Logs(data?.filter(x=>x.isDeleted == false)?.map(x=>x.locationLogs)))          
