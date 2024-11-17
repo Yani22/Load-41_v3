@@ -158,7 +158,7 @@ const SinglePageTracking = () => {
 
       const fetchLoad = async (trackingId) => {
         try {
-          let { data} = await axios.get(`https://dr48nfhb-5000.use.devtunnels.ms/trackers_info?trackingId=${trackingId}`,{
+          let { data} = await axios.get(`http://localhost:5000/trackers_info?trackingId=${trackingId}`,{
             headers: {
               'Content-Type': 'application/json',
           }

@@ -125,7 +125,7 @@ export default function Dashboard() {
 
   const Logout = async () => {
     try {
-      await fetch('https://dr48nfhb-5000.use.devtunnels.ms/logout', {
+      await fetch('http://localhost:5000/logout', {
         method: 'POST',
         headers: mainHeader()
     })

@@ -1966,7 +1966,7 @@ const Update = async () => {
     }
 
     if (direct === 'Post_to_Direct' && custom_id) {
-      await axios.patch(`https://dr48nfhb-5000.use.devtunnels.ms/fetch_postings/${posting_type}`, dataDirect, {
+      await axios.patch(`http://localhost:5000/fetch_postings/${posting_type}`, dataDirect, {
         headers: {
           'api-token':`${localStorage.getItem('direct-api-key')}`,
           'end-user-token': `${localStorage.getItem('direct_token')}`,
@@ -1981,7 +1981,7 @@ const Update = async () => {
     }
 
     if (ptts === 'Post_to_Truckerpath' && e_id) {
-      await axios.post(`https://dr48nfhb-5000.use.devtunnels.ms/trucker_update_load`, dataTP, {
+      await axios.post(`http://localhost:5000/trucker_update_load`, dataTP, {
         headers: { 'Authorization': `Bearer ${localStorage.getItem('trucker_token')}`}
       });
     }
@@ -2082,7 +2082,7 @@ const Update = async () => {
     // Make API requests conditionally
     if (dataDirect?.posting_ids?.length) {
       await handleApiRequest(
-        `https://dr48nfhb-5000.use.devtunnels.ms/fetch_postings/${posting_type}`,
+        `http://localhost:5000/fetch_postings/${posting_type}`,
         'DELETE',
         dataDirect,
         {
@@ -2094,7 +2094,7 @@ const Update = async () => {
   
     if (dataDat?.arguments?.ids?.length) {
       await handleApiRequest(
-        `https://dr48nfhb-5000.use.devtunnels.ms/dat_delete_load_postings`,
+        `http://localhost:5000/dat_delete_load_postings`,
         'POST',
         dataDat,
         { 'Authorization': `Bearer ${localStorage.getItem('token')}` }
@@ -2103,7 +2103,7 @@ const Update = async () => {
   
     if (data?.loads?.length) {
       await handleApiRequest(
-        `https://dr48nfhb-5000.use.devtunnels.ms/truckstop_delete_loads`,
+        `http://localhost:5000/truckstop_delete_loads`,
         'POST',
         data,
         { 'Authorization': `Bearer ${localStorage.getItem('trucks_token')}`, 'Content-Type': 'application/json' }
@@ -2112,7 +2112,7 @@ const Update = async () => {
   
     if (dataTp?.external_id?.length) {
       await handleApiRequest(
-        `https://dr48nfhb-5000.use.devtunnels.ms/trucker_delete_load`,
+        `http://localhost:5000/trucker_delete_load`,
         'POST',
         dataTp,
         { 'Authorization': `Bearer ${localStorage.getItem('trucker_token')}`}
@@ -2190,7 +2190,7 @@ const Update = async () => {
   
       case 'Direct':
         await handleApiRequest(
-          `https://dr48nfhb-5000.use.devtunnels.ms/fetch_postings/${posting_type}`,
+          `http://localhost:5000/fetch_postings/${posting_type}`,
           'DELETE',
           dataDirect,
           {
@@ -2202,7 +2202,7 @@ const Update = async () => {
   
       case 'truckerpath':
         await handleApiRequest(
-          `https://dr48nfhb-5000.use.devtunnels.ms/trucker_delete_load`,
+          `http://localhost:5000/trucker_delete_load`,
           'POST',
           dataTp,
           { 'Authorization': `Bearer ${localStorage.getItem('trucker_token')}`}
@@ -2446,7 +2446,7 @@ const Update = async () => {
         fetchAllData()
       }
       if ((direct == 'Post_to_Direct') && localStorage.getItem('direct_token')) {
-        const docRef = await axios.post(`https://dr48nfhb-5000.use.devtunnels.ms/fetch_postings/${posting_type}`, dataDirect, {
+        const docRef = await axios.post(`http://localhost:5000/fetch_postings/${posting_type}`, dataDirect, {
           headers:
           {
             'api-token':`${localStorage.getItem('direct-api-key')}`,
@@ -2465,7 +2465,7 @@ const Update = async () => {
         fetchAllData()
       }
       if ((ptts == 'Post_to_Truckerpath') && localStorage.getItem('trucker_token')) {
-        const docRefS = await axios.post('https://dr48nfhb-5000.use.devtunnels.ms/trucker_submit_load', dataTP, {
+        const docRefS = await axios.post('http://localhost:5000/trucker_submit_load', dataTP, {
           headers: {
             'Authorization': `Bearer ${localStorage.getItem('trucker_token')}`
           }
@@ -2566,7 +2566,7 @@ const fetchDirectLoad = async () => {
     setLoads(true);
     setLoading(true);
     try {
-        const response = await axios.get(`https://dr48nfhb-5000.use.devtunnels.ms/fetch_postings/${posting_type}`, {
+        const response = await axios.get(`http://localhost:5000/fetch_postings/${posting_type}`, {
             headers: {
               'api-token':`${localStorage.getItem('direct-api-key')}`,
               'end-user-token': `${localStorage.getItem('direct_token')}`,
@@ -2587,7 +2587,7 @@ const fetchTruckerpath = async () => {
   const fetchPage = async (pageNumber) => {
     try {
       const response = await axios.post(
-        'https://dr48nfhb-5000.use.devtunnels.ms/trucker_fetch_loads',
+        'http://localhost:5000/trucker_fetch_loads',
         {
           page_num: pageNumber,
           page_size: 100

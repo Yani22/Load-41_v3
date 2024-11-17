@@ -1474,7 +1474,7 @@ export const ViewDAT = () => {
     const data = {
         ids: [...new Set(deletedata?.map(x => x?.id))]
     }
-    await axios.post(`https://dr48nfhb-5000.use.devtunnels.ms/dat_delete_load_postings`, data, {
+    await axios.post(`http://localhost:5000/dat_delete_load_postings`, data, {
       headers: {
         'Authorization': `Bearer ${localStorage.getItem('token')}`
       }
